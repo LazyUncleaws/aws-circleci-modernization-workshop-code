@@ -39,9 +39,9 @@ workflows:
   build:
     jobs:
       - run_tests
-      - approve_destroy:
+      - wait_app:
           type: approval
+      - scan_app:
           requires:
             - run_tests
-      - scan_app
 
