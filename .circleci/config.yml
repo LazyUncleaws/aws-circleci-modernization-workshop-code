@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Snyk Scan
           command: npm install
-      - synk/scan:
+      - snyk/scan:
           fail-on-issues: false
           monitor-on-build: false
 
