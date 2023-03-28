@@ -43,5 +43,5 @@ workflows:
           type: approval
       - scan_app:
           requires:
-            - run_tests
+            - wait_app
 
